@@ -1,0 +1,17 @@
+{{define "addGameForm"}}
+
+<form>
+  <div>
+    <p>Player1</p><input type="text" name="player1">
+    <p>Score1</p><input type="text" name="score1">
+    <p>Player2</p><input type="text" name="player2">
+    <p>Score2</p><input type="text" name="score2">
+  </div>
+  <div>
+    <button class="btn btn-primary" hx-post="/tasks" hx-target="#taskList" hx-target="innerHTML">
+      Post
+    </button>
+  </div>
+</form>
+
+{{end}}
